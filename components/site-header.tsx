@@ -9,7 +9,7 @@ const navItems = [
   { label: "关于", href: "#about" },
   { label: "项目", href: "#projects" },
   { label: "技能", href: "#skills" },
-  { label: "联系", href: "#contact" },
+  { label: "反馈", href: "#feedback" },
 ]
 
 export function SiteHeader() {
@@ -53,7 +53,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden md:block">
-          <Button render={<a href="#contact" />} nativeButton={false} size="sm" className="rounded-full">
+          <Button render={<a href="#feedback" />} nativeButton={false} size="sm" className="rounded-full">
             合作洽谈
           </Button>
         </div>
@@ -83,7 +83,7 @@ export function SiteHeader() {
               </a>
             ))}
             <Button
-              render={<a href="#contact" onClick={() => setOpen(false)} />}
+              render={<a href="#feedback" onClick={() => setOpen(false)} />}
               nativeButton={false}
               className="mt-2 w-full rounded-xl"
             >
